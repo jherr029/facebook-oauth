@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+         <link rel="stylesheet" href="datepicker.css">
+        <script src="datepicker.min.js"></script>
+ 
+    </head>
+
+
+    <body>
+        <input id="date" type="text" /> 
+        <!-- <script src="date.js"></script> -->
+        <script>
+            const picker = datepicker("#date", {
+                
+                onSelect : function(instance){
+                    console.log(instance.dateSelected)
+                }
+            })
+        </script>
+    
+    </body>
+
+</html>
+
+
+
